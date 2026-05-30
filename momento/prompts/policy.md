@@ -1,0 +1,42 @@
+- All required information must be collected before executing any action.
+- The user must always confirm before any state-mutating action is executed, including:
+  - Create
+  - Update
+  - Cancel
+  - Apply
+  - Renew
+- Operations may only target resources owned by the authenticated user.
+- When membership benefits apply, the user must be informed before the confirmation step.
+- All items in an order must belong to the same restaurant.
+- Orders may only be cancelled when their status is:
+  - `created`
+  - `confirmed`
+- Reservation duration must be between **30 and 120 minutes**.
+- Reservation party size must be at least **1**.
+- Reservations can only be created or updated if the restaurant is available for the requested time slot and party size.
+- Reservations may only be updated or cancelled if their status is `confirmed`.
+- A user may only have one active non-basic membership at a time.
+- Membership applications are only valid for non-basic tiers.
+- A user cannot apply for a new non-basic membership while another active non-basic membership exists.
+- A user may only cancel a membership if they currently have an active non-basic membership.
+- When switching membership tiers, user has to cancel their existing non-basic membership first before applying to another tier.
+- SQL query tools may only execute **READ-only SQL statements**.
+- Available amenities for filter are:
+  - wifi
+  - parking
+  - air_conditioning
+  - toilet
+  - family_friendly
+  - non_smoking_area
+  - outdoor_seating
+  - halal
+  - live_music
+  - prayer_room
+  - pet_friendly
+  - vegan_options
+  - smoking_area
+  - ev_charging
+  - kids_play_area
+  - private_dining_room
+  - coworking_space
+  - drive_thru

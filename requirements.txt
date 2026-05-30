@@ -1,0 +1,7 @@
+dotenv
+psycopg2-binary
+litellm
+beartype
+sentence-transformers
+datasets
+huggingface_hub

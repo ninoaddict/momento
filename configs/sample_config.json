@@ -1,0 +1,40 @@
+{
+  "agent-model": "google/gemma-4-31b-it",
+  "agent-base-url": "https://openrouter.ai/api/v1",
+  "agent-temperature": 1.0,
+  "agent-max-tokens": 8192,
+  "agent-top-p": 0.95,
+  "agent-top-k": 64,
+  "agent-reasoning-effort": null,
+
+  "user-model": "google/gemma-4-31b-it",
+  "user-base-url": "https://openrouter.ai/api/v1",
+  "user-temperature": 1.0,
+  "user-max-tokens": 8192,
+  "user-top-p": 0.95,
+  "user-top-k": 64,
+  "user-reasoning-effort": null,
+
+  "max-turns": 15,
+  "max-tool-rounds": 15,
+
+  "max-context-tokens": 128000,
+
+  "start-index": 0,
+  "end-index": -1,
+  "task-ids": null,
+
+  "judge-model": "google/gemma-4-31b-it",
+  "judge-base-url": "https://openrouter.ai/api/v1",
+  "judge-temperature": 0.0,
+  "judge-max-tokens": 4096,
+  "judge-top-p": 0.95,
+  "judge-top-k": 64,
+  "judge-reasoning-effort": null,
+
+  "n-trials": 3,
+
+  "output-dir": "results",
+  "prompt_path": "momento/prompts/agent.md",
+  "policy_path": "momento/prompts/policy.md"
+}
